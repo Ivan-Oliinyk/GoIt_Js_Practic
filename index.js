@@ -1,8 +1,15 @@
+// Автотесты
+// import "./auto-test/auto_1.js";і
 // import "./auto-test/auto_2.js";
 // import "./auto-test/auto_3.js";
 // import "./auto-test/auto_4.js";
+
+// Практика Репета
 // import './js/mod_1_les_1.js';
 // import './js/mod_1_les_2.js';
 // import './js/mod_2_les_1.js';
 // import "./js/modules_3.js";
-import "./js/modules_3.2.js";
+// import "./js/modules_3.2.js";
+// import "./js/module_4.1.js";
+
+// Практика Сандра

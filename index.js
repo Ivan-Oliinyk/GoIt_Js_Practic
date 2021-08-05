@@ -13,11 +13,11 @@
 // import "./js/Repeta/modules_3.2.js";
 // import "./js/Repeta/module_4.1.js";
 // import "./js/Repeta/modules_5.js";
-// import "./js/Repeta/module_6.js";
+import "./js/Repeta/module_6.js";
 
 // Практика Сандра
 // import "./js/Sandra/module_2-2.js";
 // import "./js/Sandra/module_3-1.js";
 
 //Практика Юрий
-import "./js/Practic_Yuriy/lesson01082021.js";
+// import "./js/Practic_Yuriy/lesson01082021.js";

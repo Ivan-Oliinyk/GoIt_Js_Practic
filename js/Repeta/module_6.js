@@ -117,7 +117,7 @@ const tweets = [
 
 const allTags = tweets.reduce((total, { tags }) => [...total, ...tags], []);
 
-console.log(allTags);
+// console.log(allTags);
 
 // const tagStatus = allTags.reduce((acc, tag) => {
 //   console.log(acc);
@@ -157,6 +157,27 @@ const autoReplace = (arr, value, str) => {
   return newStr.join(" ");
 };
 
-console.log(
-  autoReplace(["салат", "помидоры"], "едa", "свежие помидоры пошли в салат")
-);
+// console.log(
+//   autoReplace(["салат", "помидоры"], "едa", "свежие помидоры пошли в салат")
+// );
+
+const Manager = function (name = "manager", sales = 0) {
+  this.name = name;
+  this.sales = sales;
+
+  this.sell = function (product) {
+    this.sales += 1;
+    return `Manager ${this.name} solid ${product}`;
+  };
+};
+
+const mango = new Manager("Mango", 5);
+
+console.log(mango.sales);
+console.log(mango.sell("TV"));
+
+const tango = new Manager("Tango", 10);
+console.log(tango.sell("TV"));
+
+console.dir(mango);
+console.dir(tango);

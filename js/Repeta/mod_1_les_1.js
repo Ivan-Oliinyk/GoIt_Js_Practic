@@ -4,7 +4,6 @@
 
 // console.log('2)', name);
 
-
 // let num = '123' + ' ' + 2;
 
 // console.log(num);
@@ -14,7 +13,6 @@
 // let num1 = '11.109912323px',
 //     num2 = '11.000px',
 //     num3 = '11.01px';
-
 
 // function parseIntConsole(a) {
 //   console.log(parseInt(a));
@@ -42,15 +40,19 @@ function shopingStore(balance, payment) {
   // let balance = Number(balance);
   // let payment = Number(payment);
 
-  console.log(`Общая стоимость заказа  ${payment} кредитов. Проверям кол-во доступніх средств на счету`);
+  console.log(
+    `Общая стоимость заказа  ${payment} кредитов. Проверям кол-во доступніх средств на счету`
+  );
 
   if (balance >= payment) {
-    console.log(`На счету осталось ${balance - payment}`)
+    console.log(`На счету осталось ${balance - payment}`);
   } else if (balance > payment) {
-    console.log(`На счету осталось недостаточно средств для проведения операции!`)
+    console.log(
+      `На счету осталось недостаточно средств для проведения операции!`
+    );
   }
-  
-  console.log('Операция завершина');
+
+  console.log("Операция завершина");
 }
 
 // shopingStore(10000, 2000);
@@ -58,3 +60,27 @@ function shopingStore(balance, payment) {
 // let num = 45.624563;
 
 // console.log(Math.round(num));
+
+function registerGuest(name, callback) {
+  console.log(`Регистрируем гостя ${name}.`);
+  callback(name);
+}
+
+// Передаём инлайн функцию greet как колбэк
+registerGuest("Dima", function greet(name) {
+  console.log(`Добро пожаловать ${name}.`);
+});
+
+//   // Передаём инлайн функцию notify как колбэк
+registerGuest("Dima", function notify(name) {
+  console.log(`Уважаемый(ая) ${name},  30 минут.`);
+});
+
+// registerGuest("Anna", notify(greet));
+// registerGuest("Misha", notify);
+
+const notify = (name) => {
+  console.log(`Уважаемый(ая) ${name}, \n ожидайте 30 минут.!`);
+};
+
+registerGuest("Tomas", notify);

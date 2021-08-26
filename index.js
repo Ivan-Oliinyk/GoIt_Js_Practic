@@ -7,7 +7,7 @@
 // import "./auto-test/auto_6.js";
 
 // Практика Репета
-import "./js/Repeta/mod_1_les_1.js";
+// import "./js/Repeta/mod_1_les_1.js";
 // import './js/Repeta/mod_1_les_2.js';
 // import './js/Repeta/mod_2_les_1.js';
 // import "./js/Repeta/modules_3.js";
@@ -22,3 +22,4 @@ import "./js/Repeta/mod_1_les_1.js";
 
 //Практика Юрий
 // import "./js/Practic_Yuriy/lesson01082021.js";
+import "./js/Practic_Yuriy/lesson15082021.js";

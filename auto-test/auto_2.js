@@ -84,6 +84,8 @@
 //   return [array[0], array[array.length - 1]];
 // }
 
+// const getExtremeElements = array => [array[0], array[array.length - 1]];
+
 // console.log(getExtremeElements([1, 2, 3, 4, 5]));
 // console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
 
@@ -101,11 +103,15 @@
 //   return message.split(delimeter);
 // }
 
+// const splitMessage = (message, delimeter) => message.split(delimeter);
+
 // ======================================task 11/32=======================================
 
 // function calculateEngravingPrice(message, pricePerWord) {
 //   return message.split(" ").length * pricePerWord;
 // }
+
+// const calculateEngravingPrice = (message, pricePerWord) => message.split(" ").length * pricePerWord;
 
 // ======================================task 12/32=======================================
 
@@ -117,6 +123,8 @@
 //   return string;
 // }
 
+// const makeStringFromArray = (array, delimeter) => array.join(delimeter);
+
 // ======================================task 13/32=======================================
 
 // function slugify(title) {
@@ -124,6 +132,8 @@
 //   return title.toLowerCase().split(" ").join("-");
 //   // Change code above this line
 // }
+
+// const slugify = (title) => title.split(' ').join('-').toLowerCase();
 
 // ======================================task 14/32=======================================
 
@@ -188,6 +198,10 @@
 //   console.log(fruit);
 // }
 
+// fruits.forEach(elem => console.log(elem));
+
+// fruits.map(elem => console.log(elem));
+
 // ======================================task 20/32=======================================
 
 // function calculateTotalPrice(order) {
@@ -200,6 +214,14 @@
 
 //   // Change code above this line
 //   return total;
+// }
+
+// const calculateTotalPrice = (order) => {
+//   let sumOfElementOrder = 0;
+
+//   order.forEach(elem => sumOfElementOrder += elem);
+
+//   return sumOfElementOrder;
 // }
 
 // ======================================task 21/32=======================================
@@ -220,26 +242,182 @@
 //   // Change code above this line
 // }
 
+// const findLongestWord = (string) => {
+//   let longestWord = string[0];
+    
+//   string.split(' ').forEach(elem => {
+//     if (longestWord.length < elem.length) {
+//       longestWord = elem;
+//     }
+//   })
+
+//   return longestWord;
+// }
+
+
 // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 
 // ======================================task 22/32=======================================
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+  
+//   for(let i = min; i <= max; i += 1) {
+//   	numbers.push(i);
+//   }
+  
+//   return numbers;
+// }
+
+
 
 // ======================================task 23/32=======================================
+// function filterArray(numbers, value) {
+//   const arr = [];
+ 
+//  for(const number of numbers) {
+//    if(number > value) arr.push(number)
+//  }
+ 
+//  return arr;
+// }
+
+// const filterArray = (numbers, value) => {
+//   const arr = [];
+
+//   for(const number of numbers) {
+//     if(number > value) arr.push(number)
+//   }
+  
+//   return arr;
+// }
 
 // ======================================task 24/32=======================================
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
 
+//   return fruits.includes(fruit);
+// }
+
+
+// const checkFruit = (fruit, arrFruit = ["apple", "plum", "pear", "orange"]) => arrFruit.includes(fruit);
 // ======================================task 25/32=======================================
 
+// const getCommonElements = (array1, array2) => {
+//   const newArr = [];
+
+//   for (let elem of array1) {
+//     if (array2.includes(elem)) newArr.push(elem);
+//   }
+
+//   return newArr;
+// }
+
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+
+// function getCommonElements(array1, array2) {
+//   const newArr = [];
+  
+//   for(let i = 0; i < array1.length; i += 1) {
+//   	for (let k = 0; k < array2.length; k += 1) {
+//     	if (array1[i] === (array2[k])) newArr.push(array1[i]);
+//     }
+//   }
+  
+//   return newArr;
+// }
+
 // ======================================task 26/32=======================================
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (const num of order) {
+//   	total += num;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+
+// const calculateTotalPrice = order => {
+//   let total = 0;
+  
+//   for (let num of order) {
+//     total.push(num);
+//   }
+
+//   return total;
+// }
+
 
 // ======================================task 27/32=======================================
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const num  of numbers) {
+//    if (num > value) {
+//       filteredNumbers.push(num);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
 
 // ======================================task 28/32=======================================
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
 
 // ======================================task 29/32=======================================
+// function getEvenNumbers(start, end) {
+//   const arr = [];
+ 
+//    for (let i = start; i <= end; i += 1) {
+//      if (!(i % 2)) arr.push(i);
+//    }
+   
+//    return arr;
+//  }
+
 
 // ======================================task 30/32=======================================
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//   	number = i;
+//     break;
+//   }
+// }
+
 
 // ======================================task 31/32=======================================
+// function findNumber(start, end, divisor) {
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+// }
+
 
 // ======================================task 32/32=======================================
+// function includes(array, value) {
+//   for (const elem of array) {
+//   	if (elem === value) return true;
+//   }
+  
+//   return false;
+// }
+
+// const includes = (array, value) => array.some(elem => elem === value);
+
+// const includes = (array, value) => array.find(elem => elem === value) ? true : false;

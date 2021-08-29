@@ -16,6 +16,7 @@
 // import "./js/Repeta/modules_5.js";
 // import "./js/Repeta/module_6.js";
 // import "./js/Repeta/module_7.js"
+import "./js/Repeta/module_7.2.js"
 
 // Практика Сандра
 // import "./js/Sandra/module_2-2.js";

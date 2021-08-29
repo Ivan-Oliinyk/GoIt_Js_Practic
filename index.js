@@ -15,6 +15,7 @@
 // import "./js/Repeta/module_4.1.js";
 // import "./js/Repeta/modules_5.js";
 // import "./js/Repeta/module_6.js";
+// import "./js/Repeta/module_7.js"
 
 // Практика Сандра
 // import "./js/Sandra/module_2-2.js";
@@ -22,4 +23,4 @@
 
 //Практика Юрий
 // import "./js/Practic_Yuriy/lesson01082021.js";
-import "./js/Practic_Yuriy/lesson15082021.js";
+// import "./js/Practic_Yuriy/lesson15082021.js";

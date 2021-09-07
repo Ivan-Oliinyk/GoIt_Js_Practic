@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="nav">
+    <ul class="list-lessons">
+      <li class="item-lesson">
+        <a href="./index.html">Главная</a>
+      </li>
+      <li class="item-lesson">
+        <a href="./DOM.html">DOM</a>
+      </li>
+      <li class="item-lesson">
+        <a href="./Event7.1.html">Events (7.2)</a>
+      </li>
+      <li class="item-lesson">
+        <a href="./Delegating-events.html">Delegating events</a>
+      </li>
+    </ul>
+  </nav>
+  <form class="form-event js-registaration-form">
+    <div class="form-wrapper" role="group"> 
+      <input type="text" name = 'text'>
+      <input type="tel" name = "tel">
+      <div class="form-event__wrapper-radio-btn">
+        <label>
+          <input type="radio" name="subscription" value="free">
+          free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="basic">
+          basic
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro">
+          pro
+       </label>
+      </div>
+    </div>
+    <button class="" type="submit">Registration</button>
+  </form>
+
+  <div class="event-task-1">
+    <label>
+      Ваше имя:  
+      <input class="js-input-task-1" type="text" name = 'user-name'>
+    </label>
+    <label>
+      <input class="js-licency" type="checkbox">
+      C условиями согласен !
+    </label>
+    <button class="js-task-1-submit" type="submit" disabled="true">
+      Зарегистрироваться  как <span>Anonim</span>
+    </button>
+  </div>
+  
+  <script src="./index.js" type="module"></script>
+  <script src="./js/Repeta/module_7.2.js" type="module"></script>
+</body>
+</html>

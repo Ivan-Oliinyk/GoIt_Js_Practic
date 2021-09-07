@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegating-events</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="list-lessons">
+        <li class="item-lesson">
+          <a href="./index.html">Главная</a>
+        </li>
+        <li class="item-lesson">
+          <a href="./DOM.html">DOM</a>
+        </li>
+        <li class="item-lesson">
+          <a href="./Event7.1.html">Events (7.2)</a>
+        </li>
+        <li class="item-lesson">
+          <a href="./Delegating-events.html">Delegating events</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="wrapper-box">
+      <div class="parent">
+        <p>parent</p>
+        <div class="child">
+          <p>child</p>
+          <div class="inner-child">inner-child</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="js-btn-container">
+      <button class="add-btn" type="button">Add btn</button>
+      <button type="button" data-value="Html">Button 1</button>
+      <button type="button" class="js-active-btn">Button 2</button>
+      <button type="button">Button 3</button>
+      <button type="button">Button 4</button>
+      <button type="button">Button 5</button>
+    </div>
+
+    <div class="wrapper-squares"></div>
+
+    <script src="./js/Repeta/module_8.1.js" type="module"></script>
+  </body>
+</html>
